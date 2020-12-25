@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPG8R5EGR0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BPG8R5EGR0');
+</script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/assets/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,10 +24,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://githubwrapped.tech/"
-    />
+    <meta property="og:url" content="https://githubwrapped.tech/" />
     <meta property="og:title" content="Github Wrapped 2020" />
     <meta
       property="og:description"
@@ -31,10 +37,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://githubwrapped.tech"
-    />
+    <meta property="twitter:url" content="https://githubwrapped.tech" />
     <meta property="twitter:title" content="Github Wrapped 2020" />
     <meta
       property="twitter:description"
@@ -46,10 +49,129 @@
     />
 
     <title>GitHub Wrapped 2020</title>
+    <style>
+      #wrapper {
+        position: relative;
+        height: 100%;
+      }
+      .profile-main-loader {
+        left: 50% !important;
+        margin-left: -100px;
+        position: fixed !important;
+        top: 50% !important;
+        margin-top: -100px;
+        width: 45px;
+        z-index: 9000 !important;
+      }
+      .profile-main-loader .loader {
+        position: relative;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+      }
+      .profile-main-loader .loader:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+      .circular-loader {
+        -webkit-animation: rotate 2s linear infinite;
+        animation: rotate 2s linear infinite;
+        height: 100%;
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+      }
+      .loader-path {
+        stroke-dasharray: 150, 200;
+        stroke-dashoffset: -10;
+        -webkit-animation: dash 1.5s ease-in-out infinite,
+          color 6s ease-in-out infinite;
+        animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+        stroke-linecap: round;
+      }
+      @-webkit-keyframes rotate {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotate {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35;
+        }
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124;
+        }
+      }
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35;
+        }
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124;
+        }
+      }
+      @-webkit-keyframes color {
+        0% {
+          stroke: #040d23;
+        }
+        40% {
+          stroke: #040d23;
+        }
+        66% {
+          stroke: #040d23;
+        }
+        80%,
+        90% {
+          stroke: #040d23;
+        }
+      }
+      @keyframes color {
+        0% {
+          stroke: #040d23;
+        }
+        40% {
+          stroke: #040d23;
+        }
+        66% {
+          stroke: #040d23;
+        }
+        80%,
+        90% {
+          stroke: #040d23;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="profile-main-loader"><div class="loader"><svg class="circular-loader" viewBox="25 25 50 50"><circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#70c542" stroke-width="2"/></svg></div>
+    </div>
 
     <a
       href="https://github.com/ishandeveloper/github-wrapped"
