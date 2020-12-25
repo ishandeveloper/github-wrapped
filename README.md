@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+<center>
+    <img src="./public/assets/images/favicon.png" width="25%">
+    <img src="./public/assets/images/readme.png" width="75%">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://githubwrapped.tech/">Generate your report</a>
+</center>
+<hr>
 
-## Available Scripts
+#### Why do I exist?
+### 2020 has been a challenging year for all of us.
 
-In the project directory, you can run:
+As the year is ending, we thought to take a look back at all the contributions **you** as an individual
+made to the open-source community, during these unprecedented times.
 
-### `yarn start`
+Also, since Spotify, Snapchat and other mass platforms have their own way of year wrap up, **why not us?** 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<center><pre><a href="https://githubwrapped.tech">githubwrapped.tech</a></pre></center>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<hr>
 
-### `yarn test`
+### Reports
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This web app deployed at [githubwrapped.tech](https://githubwrapped.tech) will help you to generate yearly reports that contains your stats from the beginning of this year.
 
-### `yarn build`
+Including number of commits, stars etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img  src="./public/assets/images/report.png" width="75%" alt="Sample GitHub Wrapped Report">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can also save your report as an image using the 'Save Report' button and share it with the community or keep it as a memorandum :)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<hr>
 
-### `yarn eject`
+#### Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project uses [React.Js](https://reactjs.org) and the contents are bundled using webpack.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The contents in this project follow the following structure.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+├───api
+├───public
+│   └───assets
+└───src
+    ├───components
+    ├───constants
+    ├───containers
+    └───helpers
+```
 
-## Learn More
+Each individual component and container, follows this structure
+```
+section
+  ├──index.jsx (main entry point)
+  └──style.scss
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Tweet Bot
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The celebrations doesn't end here! We also our own cute octo-bot on twitter [@GitHubWrapped](https://twitter.com/GitHubWrapped).
 
-### Code Splitting
+<p align="center">
+<img src="./public/assets/images/twitter.png">
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Octobot stays awake all day/night to like & retweet all your tweets that use the hashtag #GitHubWrapped.
 
-### Analyzing the Bundle Size
+## Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##### Clone the repository
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/ishandeveloper/github-wrapped.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##### Move to the desired folder
 
-### Advanced Configuration
+```bash
+cd \github-wrapped
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+##### To install the dependencies, simply write
 
-### Deployment
+```bash
+yarn install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##### To run the app, simply write
 
-### `yarn build` fails to minify
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ishandeveloper)
