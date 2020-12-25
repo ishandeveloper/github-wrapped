@@ -1,8 +1,7 @@
 <p align="center">
     <img src="./public/assets/images/favicon.png" width="25%">
-    <img src="./public/assets/images/readme.png" width="75%">
-
-<a href="https://githubwrapped.tech/">Generate your report</a>
+    <img src="./public/assets/images/readme.png" width="75%"><br/>
+<a  href="https://githubwrapped.tech/">Generate your report</a>
 </p>
 <hr>
 
