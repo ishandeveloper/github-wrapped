@@ -1,0 +1,219 @@
+.landing__section {
+  color: white;
+  position: relative;
+  min-height: 100vh;
+
+  .landing__header {
+    // For Fade-in GSAP
+    opacity: 0;
+    margin: 0 auto;
+    padding-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+
+    @media screen and (max-width: 720px) {
+      width: 80%;
+    }
+
+    .landing__year__in__review {
+      font-weight: 400;
+      font-size: 2rem;
+
+      @media screen and (max-width: 720px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .landing__2020 {
+      font-weight: 500;
+      font-size: 4rem;
+    }
+
+    .landing__p1 {
+      font-weight: 300;
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+
+      @media screen and (max-width: 720px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .landing__p2 {
+      font-weight: 300;
+      margin: 0.5rem 0;
+
+      @media screen and (max-width: 720px) {
+        font-size: 0.9rem;
+      }
+
+      .highlight {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .landing__octo {
+    // For Fade-in GSAP
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    z-index: -1;
+
+    img {
+      margin: 0 auto;
+
+      display: block;
+      width: 50%;
+
+      @media screen and (max-width: 480px) {
+        width: 75%;
+      }
+      
+      @media screen and (max-width: 720px) {
+        width: 100%;
+      }
+  
+    }
+  }
+
+  .landing__input {
+    width: 300px;
+    background: #505a70;
+    border: none;
+    text-align: center;
+    color: black;
+    margin: 1.5rem auto;
+    outline: none;
+    font-size: 1.15rem;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    transition: all ease-in-out 250ms;
+
+    @media screen and (max-width: 360px) {
+      width: 100%;
+    }
+
+    &:hover {
+      background: #a5acbb;
+    }
+
+    &:focus {
+      background: #a5acbb;
+    }
+
+    &::-webkit-input-placeholder {
+      color: black;
+    }
+
+    &::-moz-placeholder {
+      color: black;
+    }
+
+    &::-ms-placeholder {
+      color: black;
+    }
+
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  .input__helper__text {
+    transition: all ease-in-out 500ms;
+  }
+
+  .landing__loader {
+    pointer-events: none;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(0.5);
+    opacity: 0;
+
+    @keyframes ldio-cqf9gw8q6qo {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .ldio-cqf9gw8q6qo div {
+      box-sizing: border-box !important;
+    }
+    .ldio-cqf9gw8q6qo > div {
+      position: absolute;
+      width: 144px;
+      height: 144px;
+      top: 28px;
+      left: 28px;
+      border-radius: 50%;
+      border: 16px solid #000;
+      border-color: #ffffff transparent #ffffff transparent;
+      animation: ldio-cqf9gw8q6qo 1s linear infinite;
+    }
+    .ldio-cqf9gw8q6qo > div:nth-child(2) {
+      border-color: transparent;
+    }
+    .ldio-cqf9gw8q6qo > div:nth-child(2) div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: rotate(45deg);
+    }
+    .ldio-cqf9gw8q6qo > div:nth-child(2) div:before,
+    .ldio-cqf9gw8q6qo > div:nth-child(2) div:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: -16px;
+      left: 48px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 128px 0 0 #ffffff;
+    }
+    .ldio-cqf9gw8q6qo > div:nth-child(2) div:after {
+      left: -16px;
+      top: 48px;
+      box-shadow: 128px 0 0 0 #ffffff;
+    }
+    .loadingio-spinner-dual-ring-18uwc3dg3a5 {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background: none;
+    }
+    .ldio-cqf9gw8q6qo {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0; /* see note above */
+    }
+    .ldio-cqf9gw8q6qo div {
+      box-sizing: content-box;
+    }
+  }
+}
+
+.particles-js {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
