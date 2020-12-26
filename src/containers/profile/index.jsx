@@ -29,7 +29,6 @@ export default function ProfilePage() {
   const reportRef = useRef();
   const [loading, setloading] = useState(true);
   const [error, setError] = useState(null);
-
   const [report, setReport] = useState(null);
 
   const backToHome = () => {
@@ -66,7 +65,7 @@ export default function ProfilePage() {
       var img = canvas.toDataURL();
       let a = document.createElement("a");
       a.href = img;
-      a.download = `${username}-'sreport.png`;
+      a.download = `${username}'s-report.png`;
       a.click();
     });
   };
