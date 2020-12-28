@@ -68,7 +68,7 @@ export default function LandingPage() {
       <Particles className="particles-js" params={particleOptions} />
       <div className="landing__header" ref={landingRef}>
         <LandingHeader
-          inputHandler={(e) => setUsername(e.target.value)}
+          inputHandler={(e) => setUsername(e.target.value.trim())}
           username={username}
           keyUpHandler={handleUsernameSubmit}
         />
