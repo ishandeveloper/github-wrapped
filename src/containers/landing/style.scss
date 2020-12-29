@@ -72,6 +72,11 @@
       display: block;
       width: 50%;
 
+      
+      @media screen and (max-height: 720px) {
+        width: 40%;
+      }
+      
       @media screen and (max-width: 480px) {
         width: 75%;
       }
@@ -80,6 +85,8 @@
         width: 100%;
       }
   
+      
+
     }
   }
 
