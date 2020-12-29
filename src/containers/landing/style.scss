@@ -41,10 +41,15 @@
         font-size: 0.9rem;
       }
     }
-
+    .disclaimer {
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
     .landing__p2 {
       font-weight: 300;
       margin: 0.5rem 0;
+
+    
 
       @media screen and (max-width: 720px) {
         font-size: 0.9rem;
@@ -75,11 +80,10 @@
       @media screen and (max-width: 480px) {
         width: 75%;
       }
-      
-      @media screen and (min-width:480px) and (max-width: 720px) {
+
+      @media screen and (min-width: 480px) and (max-width: 720px) {
         width: 100%;
       }
-  
     }
   }
 
