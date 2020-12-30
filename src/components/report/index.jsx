@@ -40,7 +40,7 @@ export default function Report({ username, commits, stars, pr, issues, reportRef
               <img
                 className="report__icon"
                 src="/assets/images/icons/stars.svg"
-                alt="GitHub Commits"
+                alt="GitHub Stars"
               />
               <div className="report__data">
                 <div className="report__number">{dataFormatter(stars)}</div>
@@ -54,7 +54,7 @@ export default function Report({ username, commits, stars, pr, issues, reportRef
               <img
                 className="report__icon"
                 src="/assets/images/icons/pr.svg"
-                alt="GitHub Commits"
+                alt="GitHub PRs"
               />
               <div className="report__data">
                 <div className="report__number">{dataFormatter(pr)}</div>
@@ -66,11 +66,11 @@ export default function Report({ username, commits, stars, pr, issues, reportRef
               <img
                 className="report__icon"
                 src="/assets/images/icons/issues.svg"
-                alt="GitHub Commits"
+                alt="GitHub Issues"
               />
               <div className="report__data">
                 <div className="report__number">{dataFormatter(issues)}</div>
-                <div className="report__category">Issues </div>
+                <div className="report__category">Issues</div>
               </div>
             </div>
           </div>
