@@ -183,7 +183,7 @@ export default function ProfilePage() {
           <div className="profile__card" ref={card1ref}>
             <h3>Did you know?</h3>
             <p>
-              So far, over <span className="highlight">1.9 billion</span>
+              So far, over <span className="highlight">1.9 billion </span>
               commits have been made towards open-source this year.
             </p>
           </div>
