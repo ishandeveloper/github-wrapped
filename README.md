@@ -90,4 +90,15 @@ yarn install
 yarn start
 ```
 
+### Maintainers ✨
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ishandeveloper"><img src="https://avatars0.githubusercontent.com/u/54989142?v=4" width="180px;" alt=""/><br /><sub><b>Ishan Sharma</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/himanshusharma89"><img src="https://avatars0.githubusercontent.com/u/44980497?v=4" width="180px;" alt=""/><br /><sub><b>Himanshu Sharma</b></sub></a><br />
+    </td>
+  </tr>
+</table>
+
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ishandeveloper)
