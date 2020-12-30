@@ -14,26 +14,10 @@ module.exports = async (req, res) => {
 
   try {
     const _call = await fetchStats(username);
-    res.setHeader("Cache-Control", `public, max-age=86400`);
-
-    let _currentuser = _call.data.user;
-
-    stats.name = _currentuser.name || _currentuser.login;
-
-    stats.issues = _currentuser.issues.totalCount;
-
-    stats.commits =
-      _currentuser.contributionsCollection.totalCommitContributions;
-
-    stats.pr = _currentuser.pullRequests.totalCount;
-
-    // Traverse through all the nodes to get the sum
-    stats.stars = _currentuser.repositories.nodes.reduce((prev, curr) => {
-      return prev + curr.stargazers.totalCount;
-    }, 0);
+    res.setHeader("Cache-Control", `public, max-age=1800`);
 
     return res.send({
-      data: { ...stats },
+      data: { ..._call },
       generated_at: new Date().getTime(),
       error_code: 0,
     });
