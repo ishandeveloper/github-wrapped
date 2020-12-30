@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function LandingHeader({
-    inputHandler,
-    keyUpHandler,
-    username
+  inputHandler,
+  keyUpHandler,
+  username,
 }) {
   return (
     <>
@@ -17,10 +17,12 @@ export default function LandingHeader({
       <p className="landing__p2">
         Let's take a look back at all the contributions
         <span className="highlight"> you</span> as an individual
-        <br />
-        made to the open-source community, during these unprecedented times.
+        <br /> made to the open-source community, during these unprecedented
+        times.
       </p>
-
+      <span className="disclaimer">
+        *This project is neither maintained nor endorsed by GitHub
+      </span>
       <input
         className="landing__input"
         type="text"
