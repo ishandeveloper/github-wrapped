@@ -7,6 +7,7 @@ export default function LandingHeader({
 }) {
   return (
     <>
+    <div className="landing__card">
       <h2 className="landing__year__in__review">GitHub Wrapped</h2>
       <h1 className="landing__2020">2020</h1>
 
@@ -38,6 +39,7 @@ export default function LandingHeader({
       >
         Press 'Enter' to submit
       </div>
+    </div>
     </>
   );
 }

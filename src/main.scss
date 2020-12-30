@@ -16,6 +16,12 @@
   font-size: 16px;
 }
 
+.landing__card{
+  background-color: rgba(0, 0, 0, 0.589);
+  border-radius: 20px;
+  padding: 20px;
+}
+
 body {
   background-color: var(--color-primary);
   background: url("./assets/images/background.png");
