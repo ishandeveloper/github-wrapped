@@ -24,7 +24,7 @@ export default function LandingHeader({
       <input
         className="landing__input"
         type="text"
-        placeholder="Your Github Username"
+        placeholder="Your GitHub Username"
         onChange={inputHandler}
         value={username}
         onKeyUp={keyUpHandler}

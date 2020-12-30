@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const { multiTokenizer } = require("./multitokenizer");
 
-// Github Search REST API currently does not support sorting repositories by number of stars
+// GitHub Search REST API currently does not support sorting repositories by number of stars
 const fetchTotalStars = (parameters, token) => {
   return axios({
     url: "https://api.github.com/graphql",
