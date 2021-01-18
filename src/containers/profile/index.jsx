@@ -43,7 +43,7 @@ export default function ProfilePage() {
     const req = await getUserReport(username);
 
     if (req.error_code == 1) {
-      setError(`0xb00${req.error_code}`);
+      setError('Invalid Username');
     } else {
       let _data = req.data;
       setReport({
@@ -128,7 +128,7 @@ export default function ProfilePage() {
           {error != null && (
             <div className="error__wrapper">
               <div className="error__content">
-                <p>Something went wrong.</p>({error})
+                <h3>{error}</h3>
                 <a
                   rel="noopener"
                   target="_blank"
