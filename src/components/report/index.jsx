@@ -15,7 +15,7 @@ export default function Report({ username, commits, stars, pr, issues, reportRef
 
       <div className="report__content">
         <h2 className="report__username">
-          <span className="highlight">{username}</span> 's
+          <span className="highlight">{username}</span>'s
         </h2>
         <div className="report__header">
           <h2>2020</h2>
