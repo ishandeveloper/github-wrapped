@@ -39,7 +39,7 @@ const fetchTotalStars = (parameters, token) => {
 const fetchTotalCommits = (variables, token) => {
   return axios({
     method: "get",
-    url: `https://api.github.com/search/commits?q=author:${variables.login}+committer-date:>2020-01-01`,
+    url: `https://api.github.com/search/commits?q=author:${variables.login}+committer-date:>2021-01-01`,
     headers: {
       "Content-Type": "application/json",
       Accept: "application/vnd.github.cloak-preview",
@@ -52,7 +52,7 @@ const fetchTotalCommits = (variables, token) => {
 const fetchTotalIssues = (params, token) => {
   return axios({
     method: "get",
-    url: `https://api.github.com/search/issues?q=author:${params.login}+is:issue+created:2020-01-01..2020-12-31`,
+    url: `https://api.github.com/search/issues?q=author:${params.login}+is:issue+created:2021-01-01..2021-12-31`,
     headers: {
       "Content-Type": "application/json",
       Accept: "application/vnd.github.cloak-preview",
@@ -65,7 +65,7 @@ const fetchTotalIssues = (params, token) => {
 const fetchTotalPRs = (params, token) => {
   return axios({
     method: "get",
-    url: `https://api.github.com/search/issues?q=author:${params.login}+is:pr+created:2020-01-01..2020-12-31`,
+    url: `https://api.github.com/search/issues?q=author:${params.login}+is:pr+created:2021-01-01..2021-12-31`,
     headers: {
       "Content-Type": "application/json",
       Accept: "application/vnd.github.cloak-preview",

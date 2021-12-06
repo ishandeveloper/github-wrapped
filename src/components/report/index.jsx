@@ -1,7 +1,14 @@
 import React from "react";
 import "./style.scss";
 
-export default function Report({ username, commits, stars, pr, issues, reportReference }) {
+export default function Report({
+  username,
+  commits,
+  stars,
+  pr,
+  issues,
+  reportReference,
+}) {
   const dataFormatter = (data) => {
     if (data > 1000) {
       return `${(data / 1000).toFixed(1)}k`;
@@ -18,7 +25,7 @@ export default function Report({ username, commits, stars, pr, issues, reportRef
           <span className="highlight">{username}</span> 's
         </h2>
         <div className="report__header">
-          <h2>2020</h2>
+          <h2>2021</h2>
           <h4>Year in review</h4>
         </div>
 
