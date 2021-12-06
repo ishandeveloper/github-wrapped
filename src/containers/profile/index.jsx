@@ -167,7 +167,7 @@ export default function ProfilePage() {
               <a
                 target="_blank"
                 rel="noopener"
-                href={`https://twitter.com/intent/tweet?original_referer=https://githubwrapped.techF&ref_src=twsrc%5Etfw&text=In 2020 I made over ${report.commits}%2B commits and ${report.pullrequests} Pull Requests towards open-source! Check how your %23GithubWrapped up in 2020 at&tw_p=tweetbutton&url=githubwrapped.tech`}
+                href={`https://twitter.com/intent/tweet?original_referer=https://githubwrapped.techF&ref_src=twsrc%5Etfw&text=In 2021 I made over ${report.commits}%2B commits and ${report.pullrequests} Pull Requests towards open-source! Check how your %23GithubWrapped up in 2021 at&tw_p=tweetbutton&url=githubwrapped.tech`}
                 className="tweet-btn"
               >
                 <img

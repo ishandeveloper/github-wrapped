@@ -6,12 +6,13 @@
 <hr>
 
 #### Why do I exist?
-### 2020 has been a challenging year for all of us.
+
+### 2021 has been a challenging year for all of us.
 
 As the year is ending, we thought to take a look back at all the contributions **you** as an individual
 made to the open-source community, during these unprecedented times.
 
-Also, since Spotify, Snapchat and other mass platforms have their own way of year wrap up, **why not us?** 
+Also, since Spotify, Snapchat and other mass platforms have their own way of year wrap up, **why not us?**
 
 <center><pre><a href="https://githubwrapped.tech">githubwrapped.tech</a></pre></center>
 
@@ -31,7 +32,6 @@ You can also save your report as an image using the 'Save Report' button and sha
 
 #### Project Structure
 
-
 This project uses [React.Js](https://reactjs.org) and the contents are bundled using webpack.
 
 The contents in this project follow the following structure.
@@ -48,6 +48,7 @@ The contents in this project follow the following structure.
 ```
 
 Each individual component and container, follows this structure
+
 ```
 section
   ├──index.jsx (main entry point)
