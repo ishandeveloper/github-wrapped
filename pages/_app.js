@@ -1,11 +1,12 @@
 import GitHubButton from "react-github-btn";
-
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import "../styles/globals.scss";
 import "../styles/landing.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <GoogleAnalytics trackPageViews gaMeasurementId="G-BPG8R5EGR0" />
       <Component {...pageProps} />
       <div className="github-button-wrapper">
         <GitHubButton

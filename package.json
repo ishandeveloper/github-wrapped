@@ -20,6 +20,7 @@
     "isomorphic-fetch": "^3.0.0",
     "jssoup": "^0.0.15",
     "next": "13.0.6",
+    "nextjs-google-analytics": "^2.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-github-btn": "^1.4.0",
