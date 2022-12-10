@@ -1,0 +1,152 @@
+.logo {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+
+  img {
+    height: 54px;
+    width: 54px;
+  }
+
+  h3 {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+.disclaimer {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.wrapper {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 2.5rem 5rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.graph {
+  flex: 2;
+  cursor: move;
+  border-radius: 8px;
+
+  &.loading {
+    background: hsl(0, 0%, 98%);
+    background: linear-gradient(
+      90deg,
+      hsl(0, 0%, 98%) 0%,
+      hsl(0, 0%, 96%) 46%,
+      hsl(0, 0%, 98%) 100%
+    );
+    background-size: cover;
+    animation: skeleton 2s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+
+  @keyframes skeleton {
+    0% {
+      background-position: -800px 0;
+    }
+    100% {
+      background-position: 800px 0;
+    }
+  }
+}
+.actions {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.action {
+  background: #f3f7f7;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.75rem 1.2rem;
+  height: max-content;
+
+  h3 {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    line-height: 1.3;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+}
+
+.infoCard {
+  display: flex;
+  flex: 2;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+
+  h3 {
+    top: 50%;
+    left: 1rem;
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: translateY(-50%) rotate(180deg);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.16rem;
+    span {
+      color: #113692;
+    }
+  }
+  svg {
+    margin-left: 4rem;
+    max-width: 100%;
+  }
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+}

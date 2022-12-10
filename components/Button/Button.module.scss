@@ -1,0 +1,42 @@
+.button {
+  background: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  filter: brightness(1);
+  cursor: pointer;
+  z-index: 2;
+  transition: all ease-in-out 250ms;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background: #444444;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-right: 0.5rem;
+}
+
+.logo {
+  height: 26px;
+  height: 26px;
+  margin-right: 1rem;
+  &:hover {
+    background: #444444;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.svg {
+  height: 26px;
+  width: 26px;
+  fill: #ffffff;
+}

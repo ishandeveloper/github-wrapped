@@ -1,0 +1,215 @@
+.landing {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: hidden;
+
+  &__logo {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+
+    height: 54px;
+    width: 54px;
+  }
+
+  &__content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 1rem;
+    top: 30%;
+    left: 0;
+    transform: translate(0%, -50%);
+
+    @media only screen and (max-width: 720px) {
+      top: 45%;
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-text);
+    text-align: center;
+
+    @media only screen and (max-width: 720px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__message {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: var(--color-primary);
+    text-align: center;
+
+    @media only screen and (max-width: 720px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    line-height: 1.75;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    text-align: center;
+    @media only screen and (max-width: 720px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__flow-a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-top: 0.5rem;
+      color: #fff;
+      background: var(--color-primary);
+      padding: 1rem 4rem;
+      min-width: 15em;
+      width: 18em;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+      font-weight: 500;
+      font-size: 1.1rem;
+      text-align: center;
+      transition: all ease-in-out 250ms;
+      position: absolute;
+      z-index: 2;
+      cursor: pointer;
+      top: 60px;
+      opacity: 1;
+
+      &.hidden {
+        top: 0px;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__input {
+    margin-top: 0.5rem;
+    background: var(--color-input-bg);
+    color: var(--color-text);
+    z-index: 3;
+    padding: 0.75rem;
+    min-width: 15em;
+    width: 18em;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 0 transparent;
+    text-align: center;
+    transition: all ease-in-out 250ms;
+
+    &:focus {
+      box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2), 0 0 0 transparent;
+    }
+
+    &::placeholder {
+      color: var(--color-text-secondary);
+    }
+  }
+
+  &__separator {
+    position: relative;
+    color: var(--color-text-secondary);
+    margin: 0.75rem 0;
+    font-weight: 300;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0%;
+      top: 50%;
+      transform: translate(-55%, -50%);
+      min-width: 6rem;
+      width: 12rem;
+      height: 1px;
+      opacity: 0.5;
+      background: var(--color-text-secondary);
+
+      @media only screen and (max-width: 720px) {
+        width: 10rem;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(5%, -50%);
+      min-width: 6rem;
+      width: 12rem;
+      height: 1px;
+      opacity: 0.5;
+      background: var(--color-text-secondary);
+
+      @media only screen and (max-width: 720px) {
+        width: 10rem;
+      }
+    }
+  }
+
+  &__flow-b {
+    transition: all ease-in-out 250ms;
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+
+    &.hidden {
+      transform: translateY(150%), scale(0);
+      opacity: 0;
+    }
+  }
+
+  &__trophy {
+    position: fixed;
+    top: calc(10% + 328px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    justify-content: center;
+
+    img {
+      width: 40%;
+      transform: scale(1);
+      transform-origin: bottom;
+      transition: all ease-in-out 250ms;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+
+    @media only screen and (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &__disclaimer {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+  }
+}
