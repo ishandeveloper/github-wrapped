@@ -1,49 +1,31 @@
 {
-  "name": "year-in-review",
+  "name": "githubwrapped",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.21.1",
-    "dotenv": "^8.2.0",
-    "gsap": "^3.5.1",
-    "html2canvas": "^1.0.0-rc.7",
-    "node-sass": "^4.0.0",
-    "particles.js": "^2.0.0",
-    "react": "^17.0.1",
-    "react-content-loader": "^5.1.4",
-    "react-dom": "^17.0.1",
-    "react-particles-js": "^3.4.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@react-three/drei": "^8.0.0",
+    "@react-three/fiber": "^7.0.24",
+    "@vercel/og": "^0.0.21",
+    "axios": "^1.2.1",
+    "dotenv": "^8.2.0",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "gsap": "^3.8.0",
+    "isomorphic-fetch": "^3.0.0",
+    "jssoup": "^0.0.15",
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-github-btn": "^1.4.0",
+    "react-tsparticles": "1.36.0",
+    "sass": "^1.56.2",
+    "three": "0.127.0",
+    "three-gltf-exporter": "^0.0.1"
   }
 }

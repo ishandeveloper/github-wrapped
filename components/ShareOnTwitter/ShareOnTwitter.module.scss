@@ -1,0 +1,23 @@
+.twitterBtn {
+  background: #1d9bf0;
+
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  filter: brightness(1);
+  cursor: pointer;
+  z-index: 2;
+  transition: all ease-in-out 250ms;
+  width: max-content;
+  text-decoration: none;
+
+  span {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+}
